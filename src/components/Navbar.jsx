@@ -11,7 +11,7 @@ export default function NavBar() {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <NavLink to='/'>
-                            <h2 className="text-2xl font-medium  text-zinc-200 font-[cursive]">Shop anything!</h2>
+                            <h2 className="text-2xl font-medium  text-zinc-300 font-[cursive]">Shop anything!</h2>
                         </NavLink>
                         <div className="md:hidden">
                             <button
@@ -60,10 +60,10 @@ export default function NavBar() {
                             !navbar && (
                                 <div>
                                     <ul className="items-center justify-center space-y-8 md:flex md:space-x-8 md:space-y-0">
-                                        <li className="text-zinc-200 hover:text-blue-600">
+                                        <li className="text-zinc-300 hover:text-white">
                                             <NavLink to='/'><AiOutlineHome size={24} /></NavLink>
                                         </li>
-                                        <li className="text-zinc-200 hover:text-blue-600">
+                                        <li className="text-zinc-300 hover:text-white">
                                             <NavLink to='/cart'><AiOutlineShoppingCart size={24} /></NavLink>
                                         </li>
                                     </ul>
