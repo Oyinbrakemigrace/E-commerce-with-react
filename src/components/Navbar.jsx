@@ -72,10 +72,10 @@ export default function NavBar() {
                         }
                         <div className="md:hidden">
                             <ul className="items-center justify-center space-y-8">
-                                <li className="text-zinc-200 hover:text-blue-600 space-y-6">
+                                <li className="text-zinc-200 hover:text-white space-y-6">
                                     <NavLink to='/'>Home</NavLink>
                                 </li>
-                                <li className="text-zinc-200 hover:text-blue-600">
+                                <li className="text-zinc-200 hover:text-white">
                                     <NavLink to='/cart'>Cart</NavLink>
                                 </li>
                             </ul>
