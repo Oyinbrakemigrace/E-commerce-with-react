@@ -11,9 +11,6 @@ import playSuit from '../assets/playSuit.jpg'
 import wristWatch from '../assets/wristWatch.jpg'
 
 
-
-
-
 export const Products = [
     {
         id : 1,
@@ -39,44 +36,27 @@ export const Products = [
         price : 1500,
         productImage : faceCream
     },
+
     {
         id : 5,
-        productName : 'Flower Pot',
-        price : 5000,
-        productImage : flowerPot
-    },
-    {
-        id : 6,
         productName : 'Lip Gloss',
         price : 500,
         productImage : gloss
     },
     {
-        id : 7,
-        productName : 'Block Heels',
-        price : 9000,
-        productImage : heels
-    },
-    {
-        id : 8,
+        id : 6,
         productName : 'Necklace',
         price : 4000,
         productImage : necklace
     },
     {
-        id : 9,
+        id : 7,
         productName : 'Coco Channel',
         price : 10000,
         productImage : perfume
     },
     {
-        id : 10,
-        productName : 'Play Suit',
-        price : 2000,
-        productImage : playSuit
-    },
-    {
-        id : 11,
+        id : 8,
         productName : 'Wrist Watch',
         price : 11000,
         productImage : wristWatch
