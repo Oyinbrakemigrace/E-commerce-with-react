@@ -10,7 +10,7 @@ const ProductContainer = (props) => {
           <b>{productName}</b>
         </p>
         <p>N{price}</p>
-        <button className='bg-transparent text-zinc-800 border border-emerald-800 px-2 rounded-lg hover:bg-emerald-800 hover:text-white'>Add to cart</button>
+        <button className='bg-transparent text-zinc-800 border border-emerald-700 px-2 rounded-lg hover:bg-emerald-700 hover:text-white'>Add to cart</button>
       </div>
     </div>
   );
