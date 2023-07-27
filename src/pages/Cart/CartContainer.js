@@ -6,15 +6,19 @@ const CartContainer = (props) => {
     const{cartItems, addToCart, removeFromCart} = useContext(HomeContext)
   return (
     <div>
-        {cartItems[id] > 0 && 
-        <div className=''>
-            <img src={productImage} alt="" />
-            <p><b>{productName}</b></p>
-            <p>{price}</p>
+      {cartItems[id] > 0 && (
+        <div className="flex bg-gray-200 shadow rounded-lg">
+          <img src={productImage} alt="" className="w-1/2 p-3"/>
+          <div className='mt-14'>
+            <p>
+              <b>{productName}</b>
+            </p>
+            <p>N{price}</p>
+          </div>
         </div>
-        }
+      )}
     </div>
-  )
+  );
 }
 
 export default CartContainer

@@ -60,5 +60,5 @@ export const Products = [
         productName : 'Wrist Watch',
         price : 11000,
         productImage : wristWatch
-    },
+    }
 ]

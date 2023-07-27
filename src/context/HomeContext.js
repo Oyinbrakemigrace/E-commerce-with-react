@@ -2,15 +2,15 @@ import React, { createContext, useState } from 'react'
 import { Products } from '../composables/Products'
 
 
+export const HomeContext = createContext(null);
+
 const defaultCartItem = ()=>{
     const cart = {}
-    for(let i=1; i<Products.length ; i++){
+    for(let i=1; i<Products.length + 1 ; i++){
         cart[i] = 0
     }
     return cart
 }
-
-export const HomeContext = createContext(null)
 
 const HomeContextProvider = (props) => {
     const[cartItems, setCartItems]= useState(defaultCartItem())
