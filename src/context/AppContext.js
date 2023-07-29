@@ -26,12 +26,6 @@ const HomeContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
-  const removeProductFromCart = (productId)=>{
-    setCartItems(Products.filter((product)=>{
-      return product.id !== productId
-    }))
-  }
-
   const cartTotalAmount = () => {
     let subTotal = 0;
     for (const key in cartItems) {
@@ -56,7 +50,6 @@ const HomeContextProvider = (props) => {
         removeFromCart,
         inputChange,
         cartTotalAmount,
-        removeProductFromCart,
       }}
     >
       {props.children}

@@ -8,8 +8,7 @@ const CartContainer = (props) => {
     cartItems,
     addToCart,
     removeFromCart,
-    inputChange,
-    removeProductFromCart,
+    inputChange
   } = useContext(HomeContext);
 
   return (
@@ -47,12 +46,7 @@ const CartContainer = (props) => {
               </div>
             </div>
           </div>
-          <div className="p-1 text-red-400 bg-white h-[20%]">
-            <button onClick={() => removeProductFromCart(id)}>
-              <AiOutlineClose size={23} />
-            </button>
           </div>
-        </div>
       )}
     </div>
   );
