@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Products } from "../../composables/Products";
 import CartContainer from "./CartContainer";
-import { HomeContext } from "../../context/HomeContext";
+import { HomeContext } from "../../context/AppContext";
 import { useNavigate } from "react-router-dom";
 
 const Cart = () => {

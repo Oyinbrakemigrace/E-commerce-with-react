@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { HomeContext } from "../../context/HomeContext";
+import { HomeContext } from "../../context/AppContext";
 
 const ProductContainer = (props) => {
   const { id, productName, productImage, price } = props.data;
@@ -20,6 +20,7 @@ const ProductContainer = (props) => {
           Add to cart {AmountOfCartItem > 0 && <>({AmountOfCartItem})</>}
         </button>
       </div>
+      
     </div>
   );
 };
