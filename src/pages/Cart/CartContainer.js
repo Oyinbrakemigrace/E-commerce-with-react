@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
-import { HomeContext } from '../../context/HomeContext'
+import React, { useContext } from "react";
+import { HomeContext } from "../../context/HomeContext";
 
 const CartContainer = (props) => {
-    const { id, productName, productImage, price } = props.data;
-    const{cartItems, addToCart, removeFromCart, inputChange} = useContext(HomeContext)
+  const { id, productName, productImage, price } = props.data;
+  const { cartItems, addToCart, removeFromCart, inputChange } =
+    useContext(HomeContext);
   return (
     <div>
       {cartItems[id] > 0 && (
@@ -21,7 +22,14 @@ const CartContainer = (props) => {
               >
                 +
               </button>
-              <input type="text" className="w-1/5 border-none text-center" value={cartItems[id]} onChange={(e)=>{inputChange(Number(e.target.value), id)}} />
+              <input
+                type="text"
+                className="w-1/5 border-none text-center"
+                value={cartItems[id]}
+                onChange={(e) => {
+                  inputChange(Number(e.target.value), id);
+                }}
+              />
               <button
                 className="bg-slate-500 w-[15%]"
                 onClick={() => removeFromCart(id)}
@@ -30,11 +38,10 @@ const CartContainer = (props) => {
               </button>
             </div>
           </div>
-         
         </div>
       )}
     </div>
   );
-}
+};
 
-export default CartContainer
+export default CartContainer;

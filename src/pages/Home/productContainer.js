@@ -4,7 +4,7 @@ import { HomeContext } from "../../context/HomeContext";
 const ProductContainer = (props) => {
   const { id, productName, productImage, price } = props.data;
   const { cartItems, addToCart } = useContext(HomeContext);
-  const AmountOfCartItem= cartItems[id]
+  const AmountOfCartItem = cartItems[id];
   return (
     <div>
       <div>
@@ -17,7 +17,7 @@ const ProductContainer = (props) => {
           className="bg-transparent text-zinc-800 border border-emerald-700 px-2 rounded-lg hover:bg-emerald-700 hover:text-white"
           onClick={() => addToCart(id)}
         >
-          Add to cart {AmountOfCartItem>0 && <>({AmountOfCartItem})</>}
+          Add to cart {AmountOfCartItem > 0 && <>({AmountOfCartItem})</>}
         </button>
       </div>
     </div>
