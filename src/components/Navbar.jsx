@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineShoppingCart, AiOutlineHome } from "react-icons/ai"
+import { HomeContext } from "../context/AppContext";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
+    const {cart} = useContext(HomeContext)
+
     return (
-        <div className="fixed top-0 w-full">
+        <div>
             <nav className="w-full bg-emerald-700">
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
@@ -65,7 +68,9 @@ export default function NavBar() {
                                                 <NavLink to='/'><AiOutlineHome size={24} /></NavLink>
                                             </li>
                                             <li className="text-zinc-300 hover:text-white">
-                                                <NavLink to='/cart'><AiOutlineShoppingCart size={24} /></NavLink>
+                                                <NavLink to='/cart'>{cart > 0 ? <div className="bg-red-600 rounded-full py-0 px-1 text-center text-white">{cart}</div> : ''}<AiOutlineShoppingCart size={24} />
+                                                
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </div>

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { HomeContext } from "../../context/AppContext";
-import { AiOutlineClose } from "react-icons/ai";
 
 const CartContainer = (props) => {
   const { id, productName, productImage, price } = props.data;
@@ -8,7 +7,9 @@ const CartContainer = (props) => {
     cartItems,
     addToCart,
     removeFromCart,
-    inputChange
+    inputChange,
+    cartCount,
+    removeCartCount,
   } = useContext(HomeContext);
 
   return (
@@ -25,7 +26,7 @@ const CartContainer = (props) => {
               <div className="space-y-3">
                 <button
                   className="bg-slate-500 w-[15%]"
-                  onClick={() => addToCart(id)}
+                  onClick={() => {addToCart(id); cartCount() }}
                 >
                   +
                 </button>
@@ -39,7 +40,7 @@ const CartContainer = (props) => {
                 />
                 <button
                   className="bg-slate-500 w-[15%]"
-                  onClick={() => removeFromCart(id)}
+                  onClick={() => {removeFromCart(id); removeCartCount()}}
                 >
                   -
                 </button>

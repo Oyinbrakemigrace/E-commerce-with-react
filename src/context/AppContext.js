@@ -13,6 +13,7 @@ const defaultCartItem = () => {
 
 const HomeContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(defaultCartItem());
+  const [cart, setCart] = useState(0)
 
   const inputChange = (changedAmnount, itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: changedAmnount }));
@@ -40,6 +41,13 @@ const HomeContextProvider = (props) => {
     return subTotal;
   };
 
+  const cartCount = ()=>{
+    setCart(cart + 1 )
+  }
+
+   const removeCartCount = () => {
+     setCart(cart - 1);
+   };
   // console.log(cartItems)
 
   return (
@@ -50,6 +58,9 @@ const HomeContextProvider = (props) => {
         removeFromCart,
         inputChange,
         cartTotalAmount,
+        cartCount,
+        cart,
+        removeCartCount,
       }}
     >
       {props.children}

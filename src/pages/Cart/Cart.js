@@ -16,7 +16,9 @@ const Cart = () => {
           <CartContainer key={product.id} data={product} />
         ))}
         <div className="text-center space-y-5 ">
-          <p className="md:text-2xl text-xl font-bold">Subtotal : N{subTotal}</p>
+          <p className="md:text-2xl text-xl font-bold">
+            Subtotal : N{subTotal}
+          </p>
           <div className="md:p-4">
             <button
               className="bg-emerald-700 text-white mx-4 px-3 py-2 md:my-0 my-5 rounded-md text-center font-medium"
