@@ -14,10 +14,10 @@ const CartContainer = (props) => {
   return (
     <div>
       {cartItems[id] > 0 && (
-        <div className="flex bg-gray-200 shadow rounded-lg">
+        <div className="flex bg-gray-200 shadow rounded-lg md:p-0 p-2">
           <div className="flex">
             <img src={productImage} alt="" className="w-1/2 p-3" />
-            <div className="mt-14">
+            <div className="md:mt-14">
               <p>
                 <b>{productName}</b>
               </p>

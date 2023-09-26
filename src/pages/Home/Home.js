@@ -4,9 +4,9 @@ import ProductContainer from "./productContainer";
 
 const Home = () => {
   return (
-    <div className="grid md:grid-cols-3 sm:grid-cols-2 space-y-6 p-4 m-auto">
+    <div className="grid md:grid-cols-4 grid-cols-2 md:ml-[70px] mt-3 m-auto">
       {Products.map((product) => (
-        <ProductContainer data={product} />
+        <ProductContainer key={product.id} data={product} />
       ))}
     </div>
   );

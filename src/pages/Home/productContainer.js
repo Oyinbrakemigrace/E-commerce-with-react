@@ -7,7 +7,7 @@ const ProductContainer = (props) => {
   const AmountOfCartItem = cartItems[id];
   return (
     <div>
-      <div>
+      <div className="my-5 mx-3">
         <img src={productImage} alt="" className="md:w-[80%] sm:w-[60%]" />
         <p>
           <b>{productName}</b>
@@ -20,7 +20,6 @@ const ProductContainer = (props) => {
           Add to cart {AmountOfCartItem > 0 && <>({AmountOfCartItem})</>}
         </button>
       </div>
-      
     </div>
   );
 };

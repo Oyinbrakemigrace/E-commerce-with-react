@@ -60,4 +60,22 @@ export const Products = [
     price: 11000,
     productImage: wristWatch,
   },
+  {
+    id: 9,
+    productName: "Flower pot",
+    price: 13000,
+    productImage: flowerPot,
+  },
+  {
+    id: 10,
+    productName: "Heels",
+    price: 23000,
+    productImage: heels,
+  },
+  {
+    id: 11,
+    productName: "Play Suit",
+    price: 23000,
+    productImage: playSuit,
+  },
 ];
