@@ -26,7 +26,10 @@ const CartContainer = (props) => {
               <div className="space-y-3">
                 <button
                   className="bg-slate-500 w-[15%]"
-                  onClick={() => {addToCart(id); cartCount() }}
+                  onClick={() => {
+                    addToCart(id);
+                    cartCount();
+                  }}
                 >
                   +
                 </button>
@@ -40,14 +43,17 @@ const CartContainer = (props) => {
                 />
                 <button
                   className="bg-slate-500 w-[15%]"
-                  onClick={() => {removeFromCart(id); removeCartCount()}}
+                  onClick={() => {
+                    removeFromCart(id);
+                    removeCartCount();
+                  }}
                 >
                   -
                 </button>
               </div>
             </div>
           </div>
-          </div>
+        </div>
       )}
     </div>
   );

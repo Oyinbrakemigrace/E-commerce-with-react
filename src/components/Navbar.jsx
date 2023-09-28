@@ -6,7 +6,7 @@ import { HomeContext } from "../context/AppContext";
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
-    const {cart} = useContext(HomeContext)
+    const { cart } = useContext(HomeContext)
 
     return (
         <div>
@@ -65,11 +65,13 @@ export default function NavBar() {
                                     <div>
                                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-8 md:space-y-0">
                                             <li className="text-zinc-300 hover:text-white">
-                                                <NavLink to='/'><AiOutlineHome size={24} /></NavLink>
+                                                <NavLink to='/'><AiOutlineHome size={30} /></NavLink>
                                             </li>
                                             <li className="text-zinc-300 hover:text-white">
-                                                <NavLink to='/cart'>{cart > 0 ? <div className="bg-red-600 rounded-full py-0 px-1 text-center text-white">{cart}</div> : ''}<AiOutlineShoppingCart size={24} />
-                                                
+                                                <NavLink to='/cart'>
+                                                    <div className="flex flex-row">
+                                                        <AiOutlineShoppingCart size={30} />{cart > 0 ? <div className="bg-red-600 rounded-full text-sm p-1 text-white">{cart}</div> : ''}
+                                                    </div>
                                                 </NavLink>
                                             </li>
                                         </ul>
