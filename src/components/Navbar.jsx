@@ -67,7 +67,7 @@ export default function NavBar() {
                                             <li className="text-zinc-300 hover:text-white">
                                                 <NavLink to='/'><AiOutlineHome size={30} /></NavLink>
                                             </li>
-                                            <li className="text-zinc-300 hover:text-white">
+                                            <li className="text-zinc-400 hover:text-white">
                                                 <NavLink to='/cart'>
                                                     <div className="flex flex-row">
                                                         <AiOutlineShoppingCart size={30} />{cart > 0 ? <div className="bg-red-600 rounded-full text-[13px] py-1 px-2 text-white">{cart}</div> : ''}
