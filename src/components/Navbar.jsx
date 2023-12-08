@@ -17,7 +17,7 @@ export default function NavBar() {
                             <NavLink to='/'>
                                 <h2 className="text-2xl font-medium  text-zinc-300 font-[cursive]">Shop anything!</h2>
                             </NavLink>
-                            <div className="md:hidden">
+                            <div className="md:hidde">
                                 <button
                                     className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                     onClick={() => setNavbar(!navbar)}
@@ -57,7 +57,7 @@ export default function NavBar() {
                     </div>
                     <div>
                         <div
-                            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                            className={`flex justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                                 }`}
                         >
                             {
@@ -70,7 +70,7 @@ export default function NavBar() {
                                             <li className="text-zinc-300 hover:text-white">
                                                 <NavLink to='/cart'>
                                                     <div className="flex flex-row">
-                                                        <AiOutlineShoppingCart size={30} />{cart > 0 ? <div className="bg-red-600 rounded-full text-sm p-1 text-white">{cart}</div> : ''}
+                                                        <AiOutlineShoppingCart size={30} />{cart > 0 ? <div className="bg-red-600 rounded-full text-[13px] py-1 px-2 text-white">{cart}</div> : ''}
                                                     </div>
                                                 </NavLink>
                                             </li>
@@ -78,7 +78,7 @@ export default function NavBar() {
                                     </div>
                                 )
                             }
-                            <div className="md:hidden">
+                            <div>
                                 <ul className="items-center justify-center space-y-8">
                                     <li className="text-zinc-200 hover:text-white space-y-6">
                                         <NavLink to='/'>Home</NavLink>
