@@ -60,7 +60,7 @@ const HomeContextProvider = (props) => {
         cartTotalAmount,
         cartCount,
         cart,
-        removeCartCount,
+        removeCartCount,setCart
       }}
     >
       {props.children}
